@@ -64,7 +64,6 @@ unsigned int convert_di(va_list args, buffer_t *output,
 		for (wid -= count; wid > 0; wid--)
 			ret += _memcpy(output, &pad, 1);
 	}
-
 	/* Print negative sign when zero flag is not active */
 	if (ZERO_FLAG == 0 && d < 0)
 		ret += _memcpy(output, &neg, 1);
